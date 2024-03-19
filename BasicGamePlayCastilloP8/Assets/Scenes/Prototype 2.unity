@@ -454,7 +454,6 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
-  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -504,8 +503,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
-  orthographic size: 10
+  orthographic: 1
+  orthographic size: 20.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -530,25 +529,67 @@ Transform:
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 25, z: 7.5}
-  m_LocalScale: {x: 1, y: 20, z: 1}
+  m_LocalPosition: {x: 0, y: 47.3, z: 13.09}
+  m_LocalScale: {x: 10, y: 20, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &534669906
+--- !u!1 &742657377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742657378}
+  - component: {fileID: 742657379}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742657378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742657377}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0000017881393, y: 1.5131397, z: 0.01634264}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &742657379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534669902}
+  m_GameObject: {fileID: 742657377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 759b8b4e9bce1a1469f4004b8ecddea2, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cf5a0e86a424ac498f38727bf261a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  animalPreFabs:
+  - {fileID: 6919723086483949573, guid: 3250a1b6a0ea1f842b855f12fd566e8e, type: 3}
+  - {fileID: 6065907792615478714, guid: ae83eac46bf4e834ea7e619c11ce0529, type: 3}
+  - {fileID: 691027710970726828, guid: cb1940ea1c140204a8ef55f4d8e2e532, type: 3}
+  - {fileID: 5936967164844191006, guid: f06adc63af2115d439ee4ef5f2ea7f8e, type: 3}
+  - {fileID: 6327725137397037254, guid: 672966ca27809e94eba98e84eba98d32, type: 3}
+  - {fileID: 8445887965014213375, guid: 91537f2ab947c9e428f631c6cc830037, type: 3}
+  - {fileID: 5946560218449782125, guid: eeed821a89a38334faf76f895ef9a848, type: 3}
+  - {fileID: 4869489060337237437, guid: cac5e525aa4b5254c9eb9d1ec149d7f0, type: 3}
+  - {fileID: 4028802606281287171, guid: 831a383efd65b8b4db2bfecbc4ef912f, type: 3}
+  - {fileID: 1599349078201870248, guid: 069aafda1358f7748b2a8ded69d2cbb6, type: 3}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,5 +734,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 534669905}
   - {fileID: 170076735}
+  - {fileID: 742657378}
   - {fileID: 992285706}
   - {fileID: 424542781}
