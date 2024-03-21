@@ -714,6 +714,7 @@ GameObject:
   - component: {fileID: 6113781877422833887}
   - component: {fileID: 4675028882045212982}
   - component: {fileID: 2362436200169760779}
+  - component: {fileID: 5259797844277997017}
   m_Layer: 0
   m_Name: BrownChicken
   m_TagString: Untagged
@@ -730,7 +731,7 @@ Transform:
   m_GameObject: {fileID: 4028802606281287171}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 9, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -790,6 +791,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9a8e6097ea6df4380c30a27125b680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5259797844277997017
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028802606281287171}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 15.99256, z: 19.48932}
+  m_Center: {x: 0, y: 7.909657, z: 0.629584}
 --- !u!1 &4202679220034739700
 GameObject:
   m_ObjectHideFlags: 0
