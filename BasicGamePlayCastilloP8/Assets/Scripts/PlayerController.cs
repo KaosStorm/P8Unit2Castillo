@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float xRange = 10.0f;
     private float zTopRange = 15f;
     private float zLowerRange = 0;
+    public Transform projectileSpawnPoint;
 
     public GameObject projectilePrefab;
 
@@ -22,6 +23,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
@@ -49,7 +52,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
             // Launch a projectile from the player
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);
         }
     }
 }
