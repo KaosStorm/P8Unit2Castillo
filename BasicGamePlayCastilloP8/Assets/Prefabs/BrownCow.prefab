@@ -1940,9 +1940,10 @@ GameObject:
   - component: {fileID: 40315628981402132}
   - component: {fileID: 824348633906935422}
   - component: {fileID: 660580805904674598}
+  - component: {fileID: 7667400324692776331}
   m_Layer: 0
   m_Name: BrownCow
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1996,7 +1997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 759b8b4e9bce1a1469f4004b8ecddea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 10
 --- !u!114 &824348633906935422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2030,6 +2031,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 15, y: 35.322136, z: 49.81871}
   m_Center: {x: 0, y: 17.338926, z: -1.1175739}
+--- !u!114 &7667400324692776331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445887965014213375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad4c62385605884da54bc0a061f17e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8797554982357104345
 GameObject:
   m_ObjectHideFlags: 0
